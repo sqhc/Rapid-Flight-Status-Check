@@ -6,19 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22729E5E6B4008170F2 /* AppDelegate.swift */; };
-		06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */; };
-		06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22B29E5E6B4008170F2 /* ViewController.swift */; };
-		06C8A22F29E5E6B4008170F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C8A22D29E5E6B4008170F2 /* Main.storyboard */; };
-		06C8A23229E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A23029E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld */; };
-		06C8A23429E5E6C6008170F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C8A23329E5E6C6008170F2 /* Assets.xcassets */; };
-		06C8A23729E5E6C6008170F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C8A23529E5E6C6008170F2 /* LaunchScreen.storyboard */; };
-		06C8A24229E5E6C7008170F2 /* Rapid_Flight_Status_CheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A24129E5E6C7008170F2 /* Rapid_Flight_Status_CheckTests.swift */; };
-		06C8A24C29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A24B29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITests.swift */; };
-		06C8A24E29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A24D29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITestsLaunchTests.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		06C8A23E29E5E6C7008170F2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -38,19 +25,8 @@
 
 /* Begin PBXFileReference section */
 		06C8A22429E5E6B4008170F2 /* Rapid Flight Status Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Flight Status Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C8A22729E5E6B4008170F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		06C8A22B29E5E6B4008170F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06C8A22E29E5E6B4008170F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06C8A23129E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rapid_Flight_Status_Check.xcdatamodel; sourceTree = "<group>"; };
-		06C8A23329E5E6C6008170F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		06C8A23629E5E6C6008170F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		06C8A23829E5E6C7008170F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06C8A23D29E5E6C7008170F2 /* Rapid Flight Status CheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rapid Flight Status CheckTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C8A24129E5E6C7008170F2 /* Rapid_Flight_Status_CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapid_Flight_Status_CheckTests.swift; sourceTree = "<group>"; };
 		06C8A24729E5E6C7008170F2 /* Rapid Flight Status CheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rapid Flight Status CheckUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06C8A24B29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapid_Flight_Status_CheckUITests.swift; sourceTree = "<group>"; };
-		06C8A24D29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rapid_Flight_Status_CheckUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +57,6 @@
 		06C8A21B29E5E6B4008170F2 = {
 			isa = PBXGroup;
 			children = (
-				06C8A22629E5E6B4008170F2 /* Rapid Flight Status Check */,
-				06C8A24029E5E6C7008170F2 /* Rapid Flight Status CheckTests */,
-				06C8A24A29E5E6C7008170F2 /* Rapid Flight Status CheckUITests */,
 				06C8A22529E5E6B4008170F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,38 +69,6 @@
 				06C8A24729E5E6C7008170F2 /* Rapid Flight Status CheckUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		06C8A22629E5E6B4008170F2 /* Rapid Flight Status Check */ = {
-			isa = PBXGroup;
-			children = (
-				06C8A22729E5E6B4008170F2 /* AppDelegate.swift */,
-				06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */,
-				06C8A22B29E5E6B4008170F2 /* ViewController.swift */,
-				06C8A22D29E5E6B4008170F2 /* Main.storyboard */,
-				06C8A23329E5E6C6008170F2 /* Assets.xcassets */,
-				06C8A23529E5E6C6008170F2 /* LaunchScreen.storyboard */,
-				06C8A23829E5E6C7008170F2 /* Info.plist */,
-				06C8A23029E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld */,
-			);
-			path = "Rapid Flight Status Check";
-			sourceTree = "<group>";
-		};
-		06C8A24029E5E6C7008170F2 /* Rapid Flight Status CheckTests */ = {
-			isa = PBXGroup;
-			children = (
-				06C8A24129E5E6C7008170F2 /* Rapid_Flight_Status_CheckTests.swift */,
-			);
-			path = "Rapid Flight Status CheckTests";
-			sourceTree = "<group>";
-		};
-		06C8A24A29E5E6C7008170F2 /* Rapid Flight Status CheckUITests */ = {
-			isa = PBXGroup;
-			children = (
-				06C8A24B29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITests.swift */,
-				06C8A24D29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITestsLaunchTests.swift */,
-			);
-			path = "Rapid Flight Status CheckUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C8A23729E5E6C6008170F2 /* LaunchScreen.storyboard in Resources */,
-				06C8A23429E5E6C6008170F2 /* Assets.xcassets in Resources */,
-				06C8A22F29E5E6B4008170F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */,
-				06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */,
-				06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */,
-				06C8A23229E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C8A24229E5E6C7008170F2 /* Rapid_Flight_Status_CheckTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06C8A24E29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITestsLaunchTests.swift in Sources */,
-				06C8A24C29E5E6C7008170F2 /* Rapid_Flight_Status_CheckUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,25 +230,6 @@
 			targetProxy = 06C8A24829E5E6C7008170F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		06C8A22D29E5E6B4008170F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06C8A22E29E5E6B4008170F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		06C8A23529E5E6C6008170F2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06C8A23629E5E6C6008170F2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		06C8A24F29E5E6C7008170F2 /* Debug */ = {
@@ -495,7 +407,6 @@
 		06C8A25529E5E6C7008170F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -515,7 +426,6 @@
 		06C8A25629E5E6C7008170F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -535,7 +445,6 @@
 		06C8A25829E5E6C7008170F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
@@ -553,7 +462,6 @@
 		06C8A25929E5E6C7008170F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
@@ -608,19 +516,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		06C8A23029E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				06C8A23129E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodel */,
-			);
-			currentVersion = 06C8A23129E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodel */;
-			path = Rapid_Flight_Status_Check.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 06C8A21C29E5E6B4008170F2 /* Project object */;
 }
