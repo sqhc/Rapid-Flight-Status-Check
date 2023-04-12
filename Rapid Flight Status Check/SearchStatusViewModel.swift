@@ -7,7 +7,18 @@
 
 import Foundation
 
-class SearchStatusViewModel: NSObject{
+protocol SearchStatusVMDelegate: AnyObject{
+    func sendDepartureYear()-> String
+    func sendDepartureMonth()-> String
+    func sendDepartureDay()-> String
+    func sendArrivalYear()-> String
+    func sendArrivalMonth()-> String
+    func sendArrivalDay()-> String
+    func sendDepartureAirport()-> String
+    func sendArrivalAirport()-> String
+}
+
+class SearchStatusViewModel: NSObject, SearchStatusVMDelegate{
     
     var departureYear = ""
     var departureMonth = ""
@@ -20,5 +31,36 @@ class SearchStatusViewModel: NSObject{
     
     override init() {
         super.init()
+    }
+    func sendDepartureYear() -> String {
+        return departureYear
+    }
+    
+    func sendDepartureMonth() -> String {
+        return departureMonth
+    }
+    
+    func sendDepartureDay() -> String {
+        return departureDay
+    }
+    
+    func sendArrivalYear() -> String {
+        return arrivalYear
+    }
+    
+    func sendArrivalMonth() -> String {
+        return arrivalMonth
+    }
+    
+    func sendArrivalDay() -> String {
+        return arrivalDay
+    }
+    
+    func sendDepartureAirport() -> String {
+        return departureAirport
+    }
+    
+    func sendArrivalAirport() -> String {
+        return arrivalAirport
     }
 }

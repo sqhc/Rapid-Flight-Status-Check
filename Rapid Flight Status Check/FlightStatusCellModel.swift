@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+struct FlightStatusCellModel{
+    let departureAirport: String?
+    let arrivalAirport: String?
+    let departureTerminal: String?
+    let arrivalTerminal: String?
+    let departureLocalTime: String?
+    let arrivalLocalTime: String?
+    let flightNumber: Int?
+    let flightType: String?
+    let numberOfStops: Int?
+    let intermediateAirports: [IntermediateAirport]?
+}
