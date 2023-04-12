@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0641CF8D29E618960030CAAC /* SearchStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF8C29E618960030CAAC /* SearchStatusViewModel.swift */; };
+		0641CF8F29E62E260030CAAC /* FlightStatusDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */; };
+		0641CF9129E642EE0030CAAC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9029E642EE0030CAAC /* APIManager.swift */; };
+		0641CF9329E644C00030CAAC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9229E644C00030CAAC /* Global.swift */; };
 		06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22729E5E6B4008170F2 /* AppDelegate.swift */; };
 		06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */; };
 		06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22B29E5E6B4008170F2 /* ViewController.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		0641CF8C29E618960030CAAC /* SearchStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStatusViewModel.swift; sourceTree = "<group>"; };
+		0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusDataModel.swift; sourceTree = "<group>"; };
+		0641CF9029E642EE0030CAAC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0641CF9229E644C00030CAAC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		06C8A22429E5E6B4008170F2 /* Rapid Flight Status Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Flight Status Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C8A22729E5E6B4008170F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,9 @@
 				06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */,
 				06C8A22B29E5E6B4008170F2 /* ViewController.swift */,
 				0641CF8C29E618960030CAAC /* SearchStatusViewModel.swift */,
+				0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */,
+				0641CF9029E642EE0030CAAC /* APIManager.swift */,
+				0641CF9229E644C00030CAAC /* Global.swift */,
 				06C8A22D29E5E6B4008170F2 /* Main.storyboard */,
 				06C8A23329E5E6C6008170F2 /* Assets.xcassets */,
 				06C8A23529E5E6C6008170F2 /* LaunchScreen.storyboard */,
@@ -264,11 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0641CF9329E644C00030CAAC /* Global.swift in Sources */,
 				06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */,
 				06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */,
 				06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */,
+				0641CF8F29E62E260030CAAC /* FlightStatusDataModel.swift in Sources */,
 				0641CF8D29E618960030CAAC /* SearchStatusViewModel.swift in Sources */,
 				06C8A23229E5E6B4008170F2 /* Rapid_Flight_Status_Check.xcdatamodeld in Sources */,
+				0641CF9129E642EE0030CAAC /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
