@@ -31,13 +31,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         arrivalAirportTextField.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        flightStatusAPI = "https://flight-info-api.p.rapidapi.com/status?version=v1"
+    }
+    
     var viewModel : SearchStatusViewModel = {
         SearchStatusViewModel()
     }()
 
     @IBAction func checkFlightStatus(_ sender: UIButton){
         if viewModel.departureYear != "" && viewModel.departureMonth != "" && viewModel.departureDay != "" && viewModel.arrivalYear != "" && viewModel.arrivalMonth != "" && viewModel.arrivalDay != ""{
-            
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "StatusesTable") as? FlightStatusesTableView{
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
         else{
             let alertView = UIAlertController(title: "The missing of departure or arrival date", message: "The information of departure date and arrival date is required", preferredStyle: .alert)

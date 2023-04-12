@@ -196,7 +196,7 @@
         <!--Flight Statuses-->
         <scene sceneID="HwG-ae-JYo">
             <objects>
-                <viewController storyboardIdentifier="StatusesTable" id="qYQ-iE-KEI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StatusesTable" id="qYQ-iE-KEI" customClass="FlightStatusesTableView" customModule="Rapid_Flight_Status_Check" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x6J-mj-fEk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FlightStatus" rowHeight="299" id="UpH-Uo-4d2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FlightStatus" rowHeight="299" id="UpH-Uo-4d2" customClass="FlightStatusCell" customModule="Rapid_Flight_Status_Check" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="299"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UpH-Uo-4d2" id="w9Y-7S-D5g">

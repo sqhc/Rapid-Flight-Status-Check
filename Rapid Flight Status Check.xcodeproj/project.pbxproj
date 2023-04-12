@@ -11,6 +11,10 @@
 		0641CF8F29E62E260030CAAC /* FlightStatusDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */; };
 		0641CF9129E642EE0030CAAC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9029E642EE0030CAAC /* APIManager.swift */; };
 		0641CF9329E644C00030CAAC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9229E644C00030CAAC /* Global.swift */; };
+		0641CF9529E7022C0030CAAC /* FlightStatusesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9429E7022C0030CAAC /* FlightStatusesTableView.swift */; };
+		0641CF9729E702420030CAAC /* FlightStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9629E702420030CAAC /* FlightStatusCell.swift */; };
+		0641CF9929E7025D0030CAAC /* FlightStatusesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9829E7025D0030CAAC /* FlightStatusesTableViewModel.swift */; };
+		0641CF9B29E702710030CAAC /* FlightStatusCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CF9A29E702710030CAAC /* FlightStatusCellModel.swift */; };
 		06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22729E5E6B4008170F2 /* AppDelegate.swift */; };
 		06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */; };
 		06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22B29E5E6B4008170F2 /* ViewController.swift */; };
@@ -45,6 +49,10 @@
 		0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusDataModel.swift; sourceTree = "<group>"; };
 		0641CF9029E642EE0030CAAC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		0641CF9229E644C00030CAAC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		0641CF9429E7022C0030CAAC /* FlightStatusesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusesTableView.swift; sourceTree = "<group>"; };
+		0641CF9629E702420030CAAC /* FlightStatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusCell.swift; sourceTree = "<group>"; };
+		0641CF9829E7025D0030CAAC /* FlightStatusesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusesTableViewModel.swift; sourceTree = "<group>"; };
+		0641CF9A29E702710030CAAC /* FlightStatusCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusCellModel.swift; sourceTree = "<group>"; };
 		06C8A22429E5E6B4008170F2 /* Rapid Flight Status Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Flight Status Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C8A22729E5E6B4008170F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 				06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */,
 				06C8A22B29E5E6B4008170F2 /* ViewController.swift */,
 				0641CF8C29E618960030CAAC /* SearchStatusViewModel.swift */,
+				0641CF9429E7022C0030CAAC /* FlightStatusesTableView.swift */,
+				0641CF9829E7025D0030CAAC /* FlightStatusesTableViewModel.swift */,
+				0641CF9629E702420030CAAC /* FlightStatusCell.swift */,
+				0641CF9A29E702710030CAAC /* FlightStatusCellModel.swift */,
 				0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */,
 				0641CF9029E642EE0030CAAC /* APIManager.swift */,
 				0641CF9229E644C00030CAAC /* Global.swift */,
@@ -273,9 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0641CF9929E7025D0030CAAC /* FlightStatusesTableViewModel.swift in Sources */,
+				0641CF9B29E702710030CAAC /* FlightStatusCellModel.swift in Sources */,
 				0641CF9329E644C00030CAAC /* Global.swift in Sources */,
+				0641CF9729E702420030CAAC /* FlightStatusCell.swift in Sources */,
 				06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */,
 				06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */,
+				0641CF9529E7022C0030CAAC /* FlightStatusesTableView.swift in Sources */,
 				06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */,
 				0641CF8F29E62E260030CAAC /* FlightStatusDataModel.swift in Sources */,
 				0641CF8D29E618960030CAAC /* SearchStatusViewModel.swift in Sources */,
