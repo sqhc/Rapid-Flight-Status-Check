@@ -8,7 +8,7 @@
 import UIKit
 
 class FlightStatusesTableView: UIViewController {
-
+    @IBOutlet weak var flightStatusTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

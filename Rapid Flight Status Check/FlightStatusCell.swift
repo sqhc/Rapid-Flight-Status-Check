@@ -8,7 +8,17 @@
 import UIKit
 
 class FlightStatusCell: UITableViewCell {
-
+    @IBOutlet weak var departureAirportLabel: UILabel!
+    @IBOutlet weak var arrivalAirportLabel: UILabel!
+    @IBOutlet weak var departureTerminalLabel: UILabel!
+    @IBOutlet weak var arrivalTerminalLabel: UILabel!
+    @IBOutlet weak var departureLocalTimeLabel: UILabel!
+    @IBOutlet weak var arrivalLocalTimeLabel: UILabel!
+    @IBOutlet weak var flightNumberLabel: UILabel!
+    @IBOutlet weak var flightTypeLabel: UILabel!
+    @IBOutlet weak var numberOfStopsLabel: UILabel!
+    @IBOutlet weak var intermediateAirportsTextView: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

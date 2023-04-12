@@ -392,6 +392,18 @@
                                                 <constraint firstItem="IzJ-l7-5RX" firstAttribute="leading" secondItem="5y4-lY-vKl" secondAttribute="trailing" constant="6" id="zdb-5q-u9x"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="arrivalAirportLabel" destination="ajh-fQ-RL0" id="Sje-Ig-7Ek"/>
+                                            <outlet property="arrivalLocalTimeLabel" destination="IzJ-l7-5RX" id="pmN-Il-J6r"/>
+                                            <outlet property="arrivalTerminalLabel" destination="VJQ-P1-swH" id="ScO-2s-Xba"/>
+                                            <outlet property="departureAirportLabel" destination="gan-hr-COb" id="edj-31-Zcz"/>
+                                            <outlet property="departureLocalTimeLabel" destination="WO6-nm-fH1" id="lgY-3j-xW5"/>
+                                            <outlet property="departureTerminalLabel" destination="64i-rn-IJI" id="l1e-Zq-jy7"/>
+                                            <outlet property="flightNumberLabel" destination="ZpJ-9G-xPk" id="7Jv-BG-tME"/>
+                                            <outlet property="flightTypeLabel" destination="29s-NQ-YCP" id="8hh-AF-zJC"/>
+                                            <outlet property="intermediateAirportsTextView" destination="Oiw-23-xgU" id="maF-Bd-YUY"/>
+                                            <outlet property="numberOfStopsLabel" destination="L9s-Gx-Wbq" id="e7t-Na-s1L"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -406,6 +418,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Flight Statuses" id="aLI-V9-3gN"/>
+                    <connections>
+                        <outlet property="flightStatusTable" destination="rGK-ji-fT8" id="HZg-Ef-TrJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z46-Md-LK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
