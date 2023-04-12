@@ -7,13 +7,71 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var departureYearTextField: UITextField!
+    @IBOutlet weak var departureMonthTextField: UITextField!
+    @IBOutlet weak var departureDayTextField: UITextField!
+    @IBOutlet weak var arrivalYearTextField: UITextField!
+    @IBOutlet weak var arrivalMonthTextField: UITextField!
+    @IBOutlet weak var arrivalDayTextField: UITextField!
+    @IBOutlet weak var departureAirportTextField: UITextField!
+    @IBOutlet weak var arrivalAirportTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        departureYearTextField.delegate = self
+        departureMonthTextField.delegate = self
+        departureDayTextField.delegate = self
+        arrivalYearTextField.delegate = self
+        arrivalMonthTextField.delegate = self
+        arrivalDayTextField.delegate = self
+        departureAirportTextField.delegate = self
+        arrivalAirportTextField.delegate = self
     }
+    
+    var viewModel : SearchStatusViewModel = {
+        SearchStatusViewModel()
+    }()
 
-
+    @IBAction func checkFlightStatus(_ sender: UIButton){
+        if viewModel.departureYear != "" && viewModel.departureMonth != "" && viewModel.departureDay != "" && viewModel.arrivalYear != "" && viewModel.arrivalMonth != "" && viewModel.arrivalDay != ""{
+            
+        }
+        else{
+            let alertView = UIAlertController(title: "The missing of departure or arrival date", message: "The information of departure date and arrival date is required", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            alertView.addAction(alertAction)
+            self.present(alertView, animated: true, completion: nil)
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let value = textField.text else{
+            return true
+        }
+        switch textField{
+        case departureYearTextField:
+            viewModel.departureYear = value
+        case departureMonthTextField:
+            viewModel.departureMonth = value
+        case departureDayTextField:
+            viewModel.departureDay = value
+        case arrivalYearTextField:
+            viewModel.arrivalYear = value
+        case arrivalMonthTextField:
+            viewModel.arrivalMonth = value
+        case arrivalDayTextField:
+            viewModel.arrivalDay = value
+        case departureAirportTextField:
+            viewModel.departureAirport = value
+        case arrivalAirportTextField:
+            viewModel.arrivalAirport = value
+        default:
+            return true
+        }
+        return true
+    }
 }
 
