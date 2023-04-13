@@ -229,7 +229,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DepartureAirportLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gan-hr-COb">
                                                     <rect key="frame" x="20" y="63" width="171" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="171" id="PET-mk-9wL"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="PET-mk-9wL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,7 +238,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArrivalAirportLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajh-fQ-RL0">
                                                     <rect key="frame" x="251" y="63" width="143" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="143" id="TRb-l9-Gfa"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="TRb-l9-Gfa"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -301,7 +301,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FlightNumberLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpJ-9G-xPk">
                                                     <rect key="frame" x="138" y="150" width="260" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="260" id="j3W-Pg-B5U"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="j3W-Pg-B5U"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -316,7 +316,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FlightTypeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29s-NQ-YCP">
                                                     <rect key="frame" x="113" y="179" width="285" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="285" id="Y9c-Lx-tzw"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="285" id="Y9c-Lx-tzw"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -337,6 +337,10 @@
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiw-23-xgU">
                                                     <rect key="frame" x="20" y="230" width="378" height="58"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="378" id="4rv-0h-iQq"/>
+                                                        <constraint firstAttribute="height" constant="58" id="Qt5-w8-IDF"/>
+                                                    </constraints>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
