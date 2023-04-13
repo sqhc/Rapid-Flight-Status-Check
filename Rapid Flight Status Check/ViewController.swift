@@ -55,6 +55,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func checkScheduled(_ sender: UIButton){
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ScheduledFlights") as? ScheduledFlightsView{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard let value = textField.text else{
             return true

@@ -130,6 +130,9 @@
                                 <rect key="frame" x="129" y="605" width="158" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="airplane.circle" catalog="system" title="Scheduled flights"/>
+                                <connections>
+                                    <action selector="checkScheduled:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsL-Pb-rFO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrival date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM0-Xy-A5m">
                                 <rect key="frame" x="21" y="229" width="374" height="30"/>
@@ -201,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Your scheduled flights-->
         <scene sceneID="b0G-yq-1UE">
             <objects>
-                <viewController storyboardIdentifier="ScheduledFlights" id="OmH-xs-oSY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduledFlights" id="OmH-xs-oSY" customClass="ScheduledFlightsView" customModule="Rapid_Flight_Status_Check" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IDP-eu-2fQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +216,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduledFlight" rowHeight="211" id="85L-ea-rgl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="scheduledFlight" rowHeight="211" id="85L-ea-rgl" customClass="ScheduledFlightCell" customModule="Rapid_Flight_Status_Check" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="211"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="85L-ea-rgl" id="dAY-s7-vF5">
@@ -377,7 +380,7 @@
                             <constraint firstItem="K7z-Au-27z" firstAttribute="bottom" secondItem="scR-es-sY1" secondAttribute="bottom" id="yXV-Xm-7sI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fhb-JV-JJB"/>
+                    <navigationItem key="navigationItem" title="Your scheduled flights" id="fhb-JV-JJB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27L-aB-bZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
