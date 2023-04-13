@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func checkFlightStatus(_ sender: UIButton){
         if viewModel.departureYear != "" && viewModel.departureMonth != "" && viewModel.departureDay != "" && viewModel.arrivalYear != "" && viewModel.arrivalMonth != "" && viewModel.arrivalDay != ""{
             if let vc = storyboard?.instantiateViewController(withIdentifier: "StatusesTable") as? FlightStatusesTableView{
+                vc.viewModel.delegate = self.viewModel
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

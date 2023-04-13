@@ -29,5 +29,27 @@ class FlightStatusCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    var cellModel: FlightStatusCellModel?{
+        didSet{
+            departureAirportLabel.text = cellModel?.departureAirport ?? "Unknown"
+            arrivalAirportLabel.text = cellModel?.arrivalAirport ?? "Unknown"
+            departureTerminalLabel.text = cellModel?.departureTerminal ?? "Unknown"
+            arrivalTerminalLabel.text = cellModel?.arrivalTerminal ?? "Unknown"
+            departureLocalTimeLabel.text = cellModel?.departureLocalTime ?? "Unknown"
+            arrivalLocalTimeLabel.text = cellModel?.arrivalLocalTime ?? "Unknwon"
+            flightNumberLabel.text = "\(cellModel?.flightNumber ?? 0)"
+            flightTypeLabel.text = cellModel?.flightType ?? "Unknwon"
+            numberOfStopsLabel.text = "\(cellModel?.numberOfStops ?? 0)"
+            if let intermediateAirports = cellModel?.intermediateAirports{
+                for (index, intermediateAirport) in intermediateAirports.enumerated() {
+                    if index == intermediateAirports.count - 1{
+                        intermediateAirportsTextView.text.append(contentsOf: intermediateAirport.station ?? "Unknown")
+                    }
+                    else{
+                        intermediateAirportsTextView.text.append(contentsOf: "\(intermediateAirport.station ?? "Unknown"), ")
+                    }
+                }
+            }
+        }
+    }
 }
