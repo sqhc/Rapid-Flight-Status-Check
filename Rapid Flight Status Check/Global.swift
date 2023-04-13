@@ -13,3 +13,5 @@ let headers = [
     "X-RapidAPI-Key": "54217155a0mshc59ae06a0968327p12a4c1jsn682bd9007ac0",
     "X-RapidAPI-Host": "flight-info-api.p.rapidapi.com"
 ]
+
+var statusesCache = NSCache<NSNumber, NSData>()

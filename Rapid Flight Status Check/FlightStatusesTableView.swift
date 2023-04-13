@@ -53,10 +53,35 @@ class FlightStatusesTableView: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FlightStatus", for: indexPath) as? FlightStatusCell
-        
-        cell?.cellModel = viewModel.getCellModel(indexPath: indexPath)
-        
-        return cell!
+        if indexPath.row == viewModel.cellModels.count - 1{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "loadingStatuses", for: indexPath) as? LoadingStatusesCell
+            
+            cell!.loadingActivity.startAnimating()
+            return cell!
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FlightStatus", for: indexPath) as? FlightStatusCell
+            
+            cell?.cellModel = viewModel.getCellModel(indexPath: indexPath)
+            
+            return cell!
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == viewModel.cellModels.count - 1{
+            if viewModel.current_page < viewModel.total_page{
+                DispatchQueue.global(qos: .background).async {[weak self] in
+                    self?.viewModel.pageNextData(nextPage: self!.viewModel.current_page + 1, complete: {[weak self] errorMessage in
+                        let alertView = UIAlertController(title: "Error!", message: errorMessage, preferredStyle: .alert)
+                        let alertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                        alertView.addAction(alertAction)
+                        DispatchQueue.main.async {
+                            self?.present(alertView, animated: true, completion: nil)
+                        }
+                    })
+                }
+            }
+        }
     }
 }

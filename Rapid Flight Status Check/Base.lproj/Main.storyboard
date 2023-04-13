@@ -409,6 +409,28 @@
                                             <outlet property="numberOfStopsLabel" destination="L9s-Gx-Wbq" id="e7t-Na-s1L"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="loadingStatuses" id="CLm-HY-FzJ" customClass="LoadingStatusesCell" customModule="Rapid_Flight_Status_Check" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="343.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CLm-HY-FzJ" id="cjE-FJ-0IO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="sxK-HL-89w">
+                                                    <rect key="frame" x="197" y="12" width="20" height="20.5"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sxK-HL-89w" firstAttribute="leading" secondItem="cjE-FJ-0IO" secondAttribute="leadingMargin" constant="177" id="7rz-eB-ETt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="sxK-HL-89w" secondAttribute="trailing" constant="177" id="eOT-aa-YQk"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sxK-HL-89w" secondAttribute="bottom" constant="0.5" id="ghS-dC-5Ws"/>
+                                                <constraint firstItem="sxK-HL-89w" firstAttribute="top" secondItem="cjE-FJ-0IO" secondAttribute="topMargin" constant="1" id="pqT-TO-Dua"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="loadingActivity" destination="sxK-HL-89w" id="TgW-UQ-peK"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>

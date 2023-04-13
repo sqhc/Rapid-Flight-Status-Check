@@ -12,6 +12,8 @@ class FlightStatusesTableViewModel: NSObject{
     
     weak var delegate : SearchStatusVMDelegate!
     var manager = APIManager.shared
+    var current_page = 1
+    var total_page = 0
     
     override init() {
         super.init()
@@ -36,6 +38,8 @@ class FlightStatusesTableViewModel: NSObject{
             self?.manager.decodeRequest(url: flightStatusAPI, complete: { success, status, errorMessage in
                 if success{
                     let statuses = status
+                    self?.total_page = statuses?.paging?.totalPages ?? 0
+                    self?.saveDataToCache(nextPage: self!.current_page + 1, pageInfo: statuses?.paging)
                     self?.fetchStatus(statuses: (statuses?.data)!)
                 }
                 else{
@@ -77,5 +81,33 @@ class FlightStatusesTableViewModel: NSObject{
     
     func getCellModel(indexPath: IndexPath)-> FlightStatusCellModel{
         return cellModels[indexPath.row]
+    }
+}
+
+extension FlightStatusesTableViewModel{
+    func saveDataToCache(nextPage: Int, pageInfo: PageOfData?){
+        guard let url = URL(string: (pageInfo?.next)!) else{
+            return
+        }
+        manager.getData(url: url) {success, data, error in
+            if success{
+                statusesCache.setObject(data! as NSData, forKey: nextPage as NSNumber)
+            }
+        }
+    }
+    
+    func pageNextData(nextPage: Int, complete: @escaping (_ errorMessage: String)->()){
+        current_page = nextPage
+        let nextData = statusesCache.object(forKey: nextPage as NSNumber)! as Data
+        manager.decodeStatusData(data: nextData) {[weak self] success, status, errorMessage in
+            if success{
+                let statuses = status
+                self?.saveDataToCache(nextPage: self!.current_page + 1, pageInfo: statuses?.paging)
+                self?.fetchStatus(statuses: (statuses?.data)!)
+            }
+            else{
+                complete(errorMessage!)
+            }
+        }
     }
 }
