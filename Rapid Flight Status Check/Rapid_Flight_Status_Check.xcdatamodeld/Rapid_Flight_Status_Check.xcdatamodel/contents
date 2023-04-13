@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G730" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ScheduledFlight" representedClassName=".ScheduledFlight" syncable="YES">
+        <attribute name="arrivalAirport" optional="YES" attributeType="String"/>
+        <attribute name="arrivalDate" optional="YES" attributeType="String"/>
+        <attribute name="arrivalLocalTime" optional="YES" attributeType="String"/>
+        <attribute name="arrivalTerminal" optional="YES" attributeType="String"/>
+        <attribute name="departureAirport" optional="YES" attributeType="String"/>
+        <attribute name="departureDate" optional="YES" attributeType="String"/>
+        <attribute name="departureLocalTime" optional="YES" attributeType="String"/>
+        <attribute name="departureTerminal" optional="YES" attributeType="String"/>
+        <attribute name="flightNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="ScheduledFlight" positionX="-63" positionY="-18" width="128" height="164"/>
+    </elements>
 </model>
