@@ -367,6 +367,17 @@
                                                 <constraint firstItem="bDV-kc-7gw" firstAttribute="leading" secondItem="L1P-8g-CqD" secondAttribute="trailing" constant="8" symbolic="YES" id="zNu-FR-lsL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="arrivalAirportLabel" destination="W57-NX-mau" id="Hdy-O0-823"/>
+                                            <outlet property="arrivalDateLabel" destination="fcq-jK-O7a" id="MxV-ZM-d1y"/>
+                                            <outlet property="arrivalLocalTimeLabel" destination="W2N-98-LDy" id="rUy-he-LxC"/>
+                                            <outlet property="arrivalTerminalLabel" destination="bDV-kc-7gw" id="cqN-HQ-nTq"/>
+                                            <outlet property="departureAirportLabel" destination="2Nq-Lf-S7Q" id="RXf-YG-hGx"/>
+                                            <outlet property="departureDateLabel" destination="BcP-Nf-cFT" id="yM8-UA-J1B"/>
+                                            <outlet property="departureLocalTimeLabel" destination="05G-pt-7wb" id="E66-fN-UIU"/>
+                                            <outlet property="departureTerminalLabel" destination="Lyg-mY-Kax" id="jat-ta-rmY"/>
+                                            <outlet property="flightNumberLabel" destination="NdO-kI-hbL" id="tLA-pe-YJy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -381,6 +392,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Your scheduled flights" id="fhb-JV-JJB"/>
+                    <connections>
+                        <outlet property="scheduledFlightsTable" destination="scR-es-sY1" id="rjF-cs-KJ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27L-aB-bZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

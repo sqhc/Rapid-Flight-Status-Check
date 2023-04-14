@@ -8,7 +8,7 @@
 import UIKit
 
 class ScheduledFlightsView: UIViewController {
-
+    @IBOutlet weak var scheduledFlightsTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

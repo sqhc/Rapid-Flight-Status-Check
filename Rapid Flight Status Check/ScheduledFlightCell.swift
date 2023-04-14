@@ -8,7 +8,16 @@
 import UIKit
 
 class ScheduledFlightCell: UITableViewCell {
-
+    @IBOutlet weak var departureAirportLabel: UILabel!
+    @IBOutlet weak var arrivalAirportLabel: UILabel!
+    @IBOutlet weak var departureTerminalLabel: UILabel!
+    @IBOutlet weak var arrivalTerminalLabel: UILabel!
+    @IBOutlet weak var flightNumberLabel: UILabel!
+    @IBOutlet weak var departureDateLabel: UILabel!
+    @IBOutlet weak var departureLocalTimeLabel: UILabel!
+    @IBOutlet weak var arrivalDateLabel: UILabel!
+    @IBOutlet weak var arrivalLocalTimeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
