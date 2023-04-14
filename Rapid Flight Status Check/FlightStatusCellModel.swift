@@ -18,4 +18,6 @@ struct FlightStatusCellModel{
     let flightType: String?
     let numberOfStops: Int?
     let intermediateAirports: [IntermediateAirport]?
+    let departureDate: String?
+    let arrivalDate: String?
 }

@@ -76,7 +76,9 @@ class FlightStatusesTableViewModel: NSObject{
         let flightType = status.flightType
         let numberOfStops = status.segmentInfo?.numberOfStops
         let intermediateAirports = status.segmentInfo?.intermediateAirports?.iata
-        return FlightStatusCellModel(departureAirport: departureAirport, arrivalAirport: arrivalAirport, departureTerminal: departureTerminal, arrivalTerminal: arrivalTerminal, departureLocalTime: departureLocalTime, arrivalLocalTime: arrivalLocalTime, flightNumber: flightNumber, flightType: flightType, numberOfStops: numberOfStops, intermediateAirports: intermediateAirports)
+        let departureDate = status.departure?.date
+        let arrivalDate = status.arrival?.date
+        return FlightStatusCellModel(departureAirport: departureAirport, arrivalAirport: arrivalAirport, departureTerminal: departureTerminal, arrivalTerminal: arrivalTerminal, departureLocalTime: departureLocalTime, arrivalLocalTime: arrivalLocalTime, flightNumber: flightNumber, flightType: flightType, numberOfStops: numberOfStops, intermediateAirports: intermediateAirports, departureDate: departureDate, arrivalDate: arrivalDate)
     }
     
     func getCellModel(indexPath: IndexPath)-> FlightStatusCellModel{

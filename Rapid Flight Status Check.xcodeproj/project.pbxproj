@@ -22,6 +22,7 @@
 		0641CFA529E88B7F0030CAAC /* ScheduledFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CFA429E88B7F0030CAAC /* ScheduledFlightCell.swift */; };
 		0641CFA729E88B980030CAAC /* ScheduledFlightsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CFA629E88B980030CAAC /* ScheduledFlightsTableViewModel.swift */; };
 		0641CFA929E88BD40030CAAC /* ScheduledFlightCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CFA829E88BD40030CAAC /* ScheduledFlightCellModel.swift */; };
+		0641CFAB29E88FB90030CAAC /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0641CFAA29E88FB90030CAAC /* DataBaseManager.swift */; };
 		06C8A22829E5E6B4008170F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22729E5E6B4008170F2 /* AppDelegate.swift */; };
 		06C8A22A29E5E6B4008170F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */; };
 		06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C8A22B29E5E6B4008170F2 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		0641CFA429E88B7F0030CAAC /* ScheduledFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledFlightCell.swift; sourceTree = "<group>"; };
 		0641CFA629E88B980030CAAC /* ScheduledFlightsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledFlightsTableViewModel.swift; sourceTree = "<group>"; };
 		0641CFA829E88BD40030CAAC /* ScheduledFlightCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledFlightCellModel.swift; sourceTree = "<group>"; };
+		0641CFAA29E88FB90030CAAC /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		06C8A22429E5E6B4008170F2 /* Rapid Flight Status Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rapid Flight Status Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C8A22729E5E6B4008170F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06C8A22929E5E6B4008170F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				0641CFA829E88BD40030CAAC /* ScheduledFlightCellModel.swift */,
 				0641CF8E29E62E260030CAAC /* FlightStatusDataModel.swift */,
 				0641CF9029E642EE0030CAAC /* APIManager.swift */,
+				0641CFAA29E88FB90030CAAC /* DataBaseManager.swift */,
 				0641CF9229E644C00030CAAC /* Global.swift */,
 				06C8A22D29E5E6B4008170F2 /* Main.storyboard */,
 				06C8A23329E5E6C6008170F2 /* Assets.xcassets */,
@@ -310,6 +313,7 @@
 				0641CF9929E7025D0030CAAC /* FlightStatusesTableViewModel.swift in Sources */,
 				0641CF9B29E702710030CAAC /* FlightStatusCellModel.swift in Sources */,
 				0641CFA329E88B600030CAAC /* ScheduledFlightsView.swift in Sources */,
+				0641CFAB29E88FB90030CAAC /* DataBaseManager.swift in Sources */,
 				0641CF9329E644C00030CAAC /* Global.swift in Sources */,
 				0641CF9729E702420030CAAC /* FlightStatusCell.swift in Sources */,
 				06C8A22C29E5E6B4008170F2 /* ViewController.swift in Sources */,
