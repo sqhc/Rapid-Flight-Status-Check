@@ -51,4 +51,20 @@ class ScheduledFlightsView: UIViewController, UITableViewDelegate, UITableViewDa
         cell!.cellModel = viewModel.getCellModel(indexPath: indexPath)
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            
+            viewModel.deleteSchedule(indexPath: indexPath)
+            viewModel.cellModels.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            tableView.endUpdates()
+        }
+    }
 }

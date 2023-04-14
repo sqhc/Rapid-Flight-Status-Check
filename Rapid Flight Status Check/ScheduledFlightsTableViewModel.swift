@@ -55,4 +55,10 @@ class ScheduledFlightsTableViewModel: NSObject{
     func getCellModel(indexPath: IndexPath)-> ScheduledFlightCellModel{
         return cellModels[indexPath.row]
     }
+    
+    func deleteSchedule(indexPath: IndexPath){
+        let cellVM = cellModels[indexPath.row]
+        let object = manager.fetchSpecific(flightNumber: cellVM.flightNumber!)
+        manager.deleteScedule(object: object)
+    }
 }
