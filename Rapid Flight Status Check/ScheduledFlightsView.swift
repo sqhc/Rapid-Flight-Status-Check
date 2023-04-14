@@ -16,6 +16,8 @@ class ScheduledFlightsView: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         scheduledFlightsTable.delegate = self
         scheduledFlightsTable.dataSource = self
+        
+        InitVM()
     }
     
     var viewModel: ScheduledFlightsTableViewModel = {

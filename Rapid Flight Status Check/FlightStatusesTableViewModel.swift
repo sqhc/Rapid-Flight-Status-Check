@@ -12,6 +12,7 @@ class FlightStatusesTableViewModel: NSObject{
     
     weak var delegate : SearchStatusVMDelegate!
     var manager = APIManager.shared
+    var dataManager = DataBaseManager.shared
     var current_page = 1
     var total_page = 0
     
@@ -111,5 +112,23 @@ extension FlightStatusesTableViewModel{
                 complete(errorMessage!)
             }
         }
+    }
+}
+
+extension FlightStatusesTableViewModel{
+    func scheduleTheFlight(indexPath: IndexPath){
+        let cellVM = cellModels[indexPath.row]
+        dataManager.saveSchedule(cellVM: cellVM)
+    }
+    
+    func checkExist(indexPath: IndexPath)-> Bool{
+        let cellVM = cellModels[indexPath.row]
+        return dataManager.checkExist(flightNumber: cellVM.flightNumber!)
+    }
+    
+    func deleteSchedule(indexPath: IndexPath){
+        let cellVM = cellModels[indexPath.row]
+        let object = dataManager.fetchSpecific(flightNumber: cellVM.flightNumber!)
+        dataManager.deleteScedule(object: object)
     }
 }

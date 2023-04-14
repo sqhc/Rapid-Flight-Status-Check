@@ -63,8 +63,20 @@ class FlightStatusesTableView: UIViewController, UITableViewDelegate, UITableVie
             let cell = tableView.dequeueReusableCell(withIdentifier: "FlightStatus", for: indexPath) as? FlightStatusCell
             
             cell?.cellModel = viewModel.getCellModel(indexPath: indexPath)
+            if viewModel.checkExist(indexPath: indexPath){
+                cell!.backgroundColor = .yellow
+            }
             
             return cell!
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if !viewModel.checkExist(indexPath: indexPath){
+            viewModel.scheduleTheFlight(indexPath: indexPath)
+        }
+        else{
+            viewModel.deleteSchedule(indexPath: indexPath)
         }
     }
     
