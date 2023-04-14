@@ -6,16 +6,30 @@
 //
 
 import UIKit
+import Dispatch
 
-class ScheduledFlightsView: UIViewController {
+class ScheduledFlightsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var scheduledFlightsTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        scheduledFlightsTable.delegate = self
+        scheduledFlightsTable.dataSource = self
     }
     
-
+    var viewModel: ScheduledFlightsTableViewModel = {
+        ScheduledFlightsTableViewModel()
+    }()
+    
+    func InitVM(){
+        viewModel.getSchedules()
+        viewModel.reloadTable = {[weak self] in
+            DispatchQueue.main.async {
+                self?.scheduledFlightsTable.reloadData()
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
@@ -26,4 +40,13 @@ class ScheduledFlightsView: UIViewController {
     }
     */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.cellModels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scheduledFlight", for: indexPath) as? ScheduledFlightCell
+        cell!.cellModel = viewModel.getCellModel(indexPath: indexPath)
+        return cell!
+    }
 }

@@ -28,5 +28,17 @@ class ScheduledFlightCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    var cellModel: ScheduledFlightCellModel?{
+        didSet{
+            departureAirportLabel.text = cellModel?.departureAirport ?? "Unknown"
+            arrivalAirportLabel.text = cellModel?.arrivalAirport ?? "Unknwon"
+            departureTerminalLabel.text = cellModel?.departureTerminal ?? "Unknwon"
+            arrivalTerminalLabel.text = cellModel?.arrivalTerminal ?? "Unknwon"
+            flightNumberLabel.text = "\(cellModel?.flightNumber ?? 0)"
+            departureDateLabel.text = cellModel?.departureDate ?? "Unknwon"
+            departureLocalTimeLabel.text = cellModel?.departureLocalTime ?? "Unknown"
+            arrivalDateLabel.text = cellModel?.arrivalDate ?? "Unknown"
+            arrivalLocalTimeLabel.text = cellModel?.arrivalLocalTime ?? "Unknown"
+        }
+    }
 }
